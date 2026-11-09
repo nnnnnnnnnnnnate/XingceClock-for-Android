@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">行测计时器</string>
+    <string name="channel_name">计时与响铃</string>
+    <string name="channel_desc">倒计时进行中显示剩余时间，到点响铃</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="horizontal"
+    android:padding="44dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/seqText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="流水线 第 1/6 项"
+            android:textColor="@color/muted"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/stageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="资料分析"
+            android:textColor="@color/text"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autoSizeMaxTextSize="250sp"
+            android:autoSizeMinTextSize="60sp"
+            android:autoSizeStepGranularity="4sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="30:00"
+            android:textColor="@color/text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="接下来：数量关系（15 分钟）"
+            android:textColor="@color/muted"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnPause"
+            style="@style/RunButton"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/btnSkip"
+            style="@style/RunButton"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginTop="16dp"
+            android:text="跳过本段" />
+
+        <Button
+            android:id="@+id/btnStop"
+            style="@style/DangerButton"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginTop="16dp"
+            android:text="停止" />
+
+        <Button
+            android:id="@+id/btnAlert"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="立即开始下一项"
+            android:textSize="22sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
